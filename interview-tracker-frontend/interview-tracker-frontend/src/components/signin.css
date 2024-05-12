@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #241e3b; /* Dark purple background */
+  }
+  
+  .card {
+    width: 300px;
+    padding: 25px;
+    background-color: #362f52; /* Dark purple card background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Dark shadow */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffc107; /* Yellow text */
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: -5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #8a86b9; /* Light purple border */
+    border-radius: 4px;
+    background-color: #524876; /* Dark purple input background */
+    color: #ffffff; /* White text */
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffc107; /* Yellow button */
+    color: #241e3b; /* Dark purple text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #ffca28; /* Lighter yellow on hover */
+  }
+  

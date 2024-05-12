@@ -1,0 +1,108 @@
+/* Styles for the add candidate form */
+.add-candidate-form {
+    margin-top: 20px;
+    border: none; /* Remove border */
+    padding: 20px;
+    border-radius: 50px; /* Use a large border radius to create a capsule shape */
+    background-color: #222; /* Dark background color */
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    color: #fff; /* White text color */
+  }
+  
+  .add-candidate-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .add-candidate-form input[type="text"],
+  .add-candidate-form textarea,
+  .add-candidate-form select {
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    margin-right: 10px;
+    padding: 12px;
+    border: 1px solid #531e79; /* Dark purple border color */
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none; /* Remove outline */
+    transition: border-color 0.3s ease; /* Add transition for border color */
+    background-color: #333; /* Dark input background color */
+    color: #fff; /* White text color */
+  }
+  
+  .add-candidate-form input[type="text"]:focus,
+  .add-candidate-form textarea:focus,
+  .add-candidate-form select:focus {
+    border-color: #8d41a4; /* Lighter purple border color on focus */
+  }
+  
+  .add-candidate-form textarea {
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    min-height: 100px; /* Set minimum height for textarea */
+  }
+  
+  .add-candidate-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #531e79; /* Dark purple button color */
+    color: #fff; /* White text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+  }
+  
+  .add-candidate-form button:hover {
+    background-color: #8d41a4; /* Lighter purple button color on hover */
+  }
+  
+  /* Styles for the candidate form */
+  .candidate-form {
+    text-align: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: grid;
+  }
+  
+  .candidate-form table {
+    /* Additional styles for table */
+  }
+  
+  .candidate-form th {
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: #8d41a4; /* Purple header color */
+    color: #fff; /* White text color */
+  }
+  
+  .candidate-form td {
+    text-align: center;
+    border-radius: 5px;
+    background-color: #333; /* Dark cell background color */
+    font-size: 22px;
+    color: #fff; /* White text color */
+  }
+  
+  .candidate-form button {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #8d41a4; /* Dark purple border color */
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #531e79; /* Dark purple button color */
+    color: #fff; /* White text color */
+  }
+  
+  .actions {
+    display: flex;
+    background-color: #333; /* Dark background color */
+    padding: 20px;
+    justify-content: center;
+  }
+  
