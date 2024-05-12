@@ -24,7 +24,7 @@ const CandidateInterviewForm: React.FC = () => {
     const fetchCandidates = async () => {
       try {
         const response = await axios.get<{ candidates: Candidate[] }>(
-          "http://localhost:5000/candidate/all"
+          "http://101.0.62.118/32/candidate/all"
         );
         setCandidates(response.data.candidates);
       } catch (error) {
