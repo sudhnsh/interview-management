@@ -38,7 +38,7 @@ const CandidateInterviewForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/candidate/add", {
+      await axios.post("http://101.0.62.118/32/candidate/add", {
         name,
         status,
         feedback,
@@ -47,7 +47,7 @@ const CandidateInterviewForm: React.FC = () => {
       console.log("Form data sent successfully");
 
       const response = await axios.get<{ candidates: Candidate[] }>(
-        "http://localhost:5000/candidate/all"
+        "http://101.0.62.118/32/candidate/all"
       );
       setCandidates(response.data.candidates);
 
@@ -64,11 +64,11 @@ const CandidateInterviewForm: React.FC = () => {
 
   const handleDelete = async (id: string) => {
     try {
-      await axios.delete(`http://localhost:5000/candidate/delete/${id}`);
+      await axios.delete(`http://101.0.62.118/32/candidate/delete/${id}`);
       console.log("Candidate deleted successfully");
 
       const response = await axios.get<{ candidates: Candidate[] }>(
-        "http://localhost:5000/candidate/all"
+        "http://101.0.62.118/32/candidate/all"
       );
       setCandidates(response.data.candidates);
     } catch (error) {
@@ -89,13 +89,13 @@ const CandidateInterviewForm: React.FC = () => {
     e.preventDefault();
     try {
       await axios.put(
-        `http://localhost:5000/candidate/edit/${editCandidate!._id}`,
+        `http://101.0.62.118/32/candidate/edit/${editCandidate!._id}`,
         { name, status, feedback, stars }
       );
       console.log("Form data edited successfully");
 
       const response = await axios.get<{ candidates: Candidate[] }>(
-        "http://localhost:5000/candidate/all"
+        "http://101.0.62.118/32/candidate/all"
       );
       setCandidates(response.data.candidates);
 
